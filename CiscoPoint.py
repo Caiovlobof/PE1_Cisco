@@ -1,13 +1,20 @@
-year = int(input("Type a year: "))
+secret_number = 777
 
-if year < 1582:
-    print("Não dentro do período do calendário gregoriano")
-else:
-    if year % 4 != 0:
-        print("Ano comum")
-    elif year % 100 != 0:
-        print("Ano bissexto")
-    elif year % 400 != 0:
-        print("Ano comum")
-    else:
-        print("Ano bissexto")
+print(
+"""
++===================================+
+| Bem vindo ao meu jogo, trouxa!    |
+| Insira um número inteiro          |
+| e adivinhar o número que tenho    |
+| escolhidos para você.             |
+| Então, qual é o número secreto?   |
++===================================+
+""")
+
+number = int(input("Enter a number: "))
+
+while number != 777:
+    print("Ha ha! Você está preso no meu loop!")
+    number = int(input("Enter a number: "))
+    if number == secret_number:
+        print("Muito bem, trouxa! Você está livre agora")
