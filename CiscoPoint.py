@@ -1,7 +1,8 @@
-n1 = int(input("Type number one:"))
-n2 = int(input("Type number two:"))
-n3 = int(input("Type number three:"))
-largest_n = n1
-if n2 > largest_n: largest_n = n2
-if n3 > largest_n: largest_n = n3
-print("Largest number is:",largest_n)
+entrada = input("tell me something..")
+
+if entrada == "Spathiphyllum":
+    print("Spathiphyllum é a melhor fábrica de todos os tempos!")
+elif entrada == "spathiphyllum":
+    print("Não, eu quero um grande Spathiphyllum!")
+else:
+    print("Spathiphyllum! Not", entrada, "!")
