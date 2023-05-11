@@ -13,7 +13,7 @@ print(
 
 number = int(input("Enter a number: "))
 
-while number != 777:
+while number != secret_number:
     print("Ha ha! Você está preso no meu loop!")
     number = int(input("Enter a number: "))
     if number == secret_number:
