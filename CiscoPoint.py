@@ -1,12 +1,13 @@
-income = float(input("Digite aqui seu imposto: "))
+year = int(input("Type a year: "))
 
-if income < 85528:
-    tax = income * 0.18 - 556.02
-elif income >= 85528:
-    tax = 14839.02 + income - 85528 * 0.32
-
-if tax < 0:
-    tax = 0
-
-tax = round(tax, 0)
-print("Taxa fica:", tax, "Reais")
+if year < 1582:
+    print("Não dentro do período do calendário gregoriano")
+else:
+    if year % 4 != 0:
+        print("Ano comum")
+    elif year % 100 != 0:
+        print("Ano bissexto")
+    elif year % 400 != 0:
+        print("Ano comum")
+    else:
+        print("Ano bissexto")
