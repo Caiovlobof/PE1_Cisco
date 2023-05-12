@@ -1,6 +1,11 @@
-word = input("Enter a word: ")
+c0 = int(input("Enter a number: "))
+counter = 0
 
-while word != "chupacabra":
-    word = input("Enter a word: ")
-    if word == "chupacabra":
-        break
+while c0 != 1:
+    if c0 % 2 == 0:
+        c0 = c0 // 2
+    else:
+        c0 = 3 * c0 + 1
+    counter += 1
+    print(c0)
+print("Número de etapas necessárias:", counter)
